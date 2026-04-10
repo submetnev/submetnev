@@ -1,0 +1,54 @@
+{
+  "versao": "1.1",
+  "data_auditoria": "2026-03-30",
+  "url_fonte": null,
+  "ultima_atualizacao_normas": "2026-03-30",
+  "etica": {
+    "titulo": "Ética e Boas Práticas",
+    "itens": [
+      "O manuscrito deve ser inédito (não publicado e não submetido simultaneamente a outro periódico).",
+      "Todos os autores devem aprovar a versão submetida e concordar com a submissão.",
+      "Plágio, autoplágio, fabricação e falsificação de dados são causas de rejeição imediata e podem ensejar notificação às instituições de vínculo.",
+      "Pesquisas envolvendo seres humanos: obrigatória a explicitação do número CAAE e do número do parecer consubstanciado do Comitê de Ética em Pesquisa no corpo do artigo.",
+      "Declaração de contribuição dos autores (taxonomia CRediT) exigida para coautorias.",
+      "Declaração de conflito de interesses (modelo ICMJE) obrigatória, assinada por todos os autores.",
+      "Uso de ferramentas de IA generativa deve ser explicitamente declarado na metodologia ou seção de agradecimentos.",
+      "Depósito de dados de pesquisa em repositórios de acesso aberto (recomendação SciELO/FAPESP/CAPES).",
+      "Conformidade com os Códigos de Ética do COPE (Committee on Publication Ethics)."
+    ]
+  },
+  "formatacao": {
+    "titulo": "Formatação (Padrão ABNT)",
+    "itens": [
+      "Arquivo: .docx (preferencial), .doc ou .odt (não aceito .pdf na submissão inicial).",
+      "Fonte: Times New Roman, tamanho 12pt.",
+      "Espaçamento: 1,5 linhas (salvo especificação contrária do periódico).",
+      "Margens: 2,5 cm (superior, inferior, esquerda, direita) - padrão ABNT (podem variar conforme diretrizes específicas).",
+      "Alinhamento: Justificado.",
+      "Páginas: Numeradas sequencialmente.",
+      "Citações: Sistema autor-data (ABNT NBR 10520).",
+      "Citações diretas longas: Mais de 3 linhas: recuo de 4 cm da margem esquerda, fonte 11pt, espaçamento simples, sem aspas.",
+      "Referências: ABNT NBR 6023 - ordem alfabética ao final do texto, com nomes COMPLETOS dos autores.",
+      "Notas: Explicativas, numeradas sequencialmente. Verificar preferência do periódico entre notas de rodapé ou notas de fim (usualmente ao final do texto, antes das referências).",
+      "Tabelas: Formato editável (Word/Excel), numeradas sequencialmente, título no topo, fonte indicada na base.",
+      "Figuras: Alta resolução (mín. 300dpi), legendas na base, numeradas sequencialmente.",
+      "Siglas: Explicitadas por extenso na primeira menção."
+    ]
+  },
+  "checklist_final": {
+    "titulo": "Checklist Final Antes da Submissão",
+    "itens": [
+      "Ortografia e gramática revisadas.",
+      "Coerência entre objetivo, método e conclusão.",
+      "Todas as citações conferidas e no formato autor-data.",
+      "Todas as referências completas, em ordem alfabética e com nomes COMPLETOS dos autores.",
+      "Arquivo anônimo para avaliação cega por pares (double-blind review), sem identificação de autores, afiliações, ORCID, agradecimentos ou referências que permitam identificação.",
+      "ORCID de todos os autores inserido nos metadados da submissão (obrigatória para todos os autores nos sistemas de submissão).",
+      "Resumo e Abstract dentro do limite especificado.",
+      "Palavras-chave e keywords alinhadas ao vocabulário controlado da área.",
+      "Declaração de conflito de interesses (modelo ICMJE) assinada por todos os autores.",
+      "Número CAAE e número do parecer consubstanciado informados (para pesquisas com seres humanos).",
+      "Termo de consentimento livre e esclarecido (quando aplicável)."
+    ]
+  }
+}
