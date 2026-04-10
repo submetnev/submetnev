@@ -1,0 +1,159 @@
+{
+  "id": 3,
+  "nome": "Tempo Social – Revista de Sociologia",
+  "imagem": "imagem/tempo_social.png",
+  "instituicao": "Universidade de São Paulo (USP) – Departamento de Sociologia",
+  "qualis": "A1",
+  "issn": "0103-2070",
+  "foco": "Sociologia Geral, Teoria Sociológica, Pesquisa Empírica, Antropologia, Ciência Política e áreas afins.",
+  "descricao": "Revista de sociologia da USP focada em pesquisa teórica e empírica. Publicação em fluxo contínuo. Avaliação duplo-cega. Permite submissão de artigos (incluindo artigos de dossiê), resenhas, entrevistas e preprints. Exige que pelo menos um autor de artigos possua título de doutor; autores de resenhas e entrevistas devem ter, no mínimo, mestrado.",
+  "avaliacao": "Duplo-cega",
+  "avaliacao_preprint": "Duplo-cega (a submissão de preprint não altera o tipo de avaliação; o artigo continua sendo avaliado no sistema duplo-cego, desde que o arquivo esteja anônimo)",
+  "taxa": "Gratuita",
+  "periodicidade": "Fluxo contínuo",
+  "preprint": "Permitido. Autores podem depositar versões em servidores de preprint. A publicação em preprint não descaracteriza a originalidade do artigo submetido. O arquivo enviado à revista deve permanecer anônimo (para garantir o duplo-cego).",
+  "licenca": "CC BY",
+  "data_auditoria": "2026-04-06",
+  "url_fonte_instrucoes": "https://www.revistas.usp.br/ts/about/submissions",
+  "ultima_atualizacao_normas": null,
+  "links": {
+    "site": "https://www.scielo.br/j/ts",
+    "submissao": "https://www.revistas.usp.br/ts/about/submissions",
+    "diretrizes": "https://www.revistas.usp.br/ts/about/submissions"
+  },
+  "limites": {
+    "artigo_caracteres": "Até 51.000 caracteres com espaços (toques)",
+    "artigo_palavras_estimado": "cerca de 8.500 palavras",
+    "resenha_caracteres": "Recomendado até 12.000 caracteres (cerca de 2.200 palavras)",
+    "entrevista_caracteres": "Recomendado até 12.000 caracteres (cerca de 2.200 palavras)",
+    "resumo_maximo_caracteres": "750 caracteres (inclui título, propósitos, métodos e conclusões)",
+    "palavras_chave_quantidade": "3 a 5",
+    "autores_maximo": 5,
+    "titulo_maximo_caracteres": "45 toques (caracteres)",
+    "referencias_minimas_artigo": 15,
+    "referencias_minimas_resenha": 5,
+    "referencias_minimas_entrevista": 5,
+    "outros_limites": "Notas de fim (não rodapé) – sem limite explícito, mas devem ser substantivas."
+  },
+  "formatacao": {
+    "fonte": "Times New Roman",
+    "tamanho_fonte": 12,
+    "espacamento_entrelinhas": "simples (1,0)",
+    "margens": "2,5 cm (superior, inferior, esquerda, direita)",
+    "alinhamento": "justificado",
+    "citacoes_longas": "Recuo de 4 cm à esquerda, fonte 11 pt, espaçamento simples, sem aspas",
+    "tabelas_figuras": "Numeradas sequencialmente, com título na parte superior e fonte na parte inferior. Inseridas no texto. Enviar também em arquivo separado (jpeg, tiff, xls) para edição.",
+    "citacoes_formato": "Autor-data (normas APA) – exemplo: (Gagnebin, 1994, p. 124)",
+    "referencias_formato": "Estilo APA (American Psychological Association), lista alfabética ao final. Exemplos fornecidos nas instruções."
+  },
+  "tipos_texto": [
+    {
+      "tipo": "Artigo (inclui artigo original e artigo de dossiê)",
+      "extensao": "Máximo 51.000 caracteres com espaços",
+      "detalhes": "Contribuição original à sociologia ou áreas afins. Estrutura acadêmica clássica.",
+      "titulacao_minima_autor": "Doutor (pelo menos um autor)",
+      "idiomas_aceitos": ["Português", "Inglês", "Espanhol", "Francês"],
+      "resumo_maximo_caracteres": 750,
+      "resumo_obrigatorio": true,
+      "palavras_chave_quantidade": "3 a 5",
+      "estrutura_sugerida": [
+        "Título (português e inglês, máximo 45 toques)",
+        "Resumo e abstract (até 750 caracteres cada)",
+        "Palavras-chave e keywords (3 a 5)",
+        "Introdução",
+        "Referencial teórico",
+        "Metodologia",
+        "Resultados e discussão",
+        "Considerações finais",
+        "Referências (APA)",
+        "Notas de fim (se houver)"
+      ],
+      "requisitos_especificos": [
+        "Originalidade e ineditismo (preprint não descaracteriza)",
+        "Estrutura acadêmica clássica",
+        "Mínimo de 15 referências bibliográficas",
+        "Declaração de aprovação por comitê de ética (se aplicável)"
+      ],
+      "referencias_minimas": 15,
+      "template": "templates/Tempo_Social_Artigo.docx"
+    },
+    {
+      "tipo": "Resenha",
+      "extensao": "Recomendado até 12.000 caracteres (cerca de 2.200 palavras)",
+      "detalhes": "Análise crítica de obra recente (preferencialmente últimos 2 anos).",
+      "titulacao_minima_autor": "Mestre (mínimo)",
+      "idiomas_aceitos": ["Português", "Inglês", "Espanhol", "Francês"],
+      "resumo_maximo_caracteres": null,
+      "resumo_obrigatorio": false,
+      "palavras_chave_quantidade": null,
+      "estrutura_sugerida": [
+        "Título (português e inglês)",
+        "Apresentação da obra",
+        "Síntese do conteúdo",
+        "Análise crítica",
+        "Contribuição para a área",
+        "Referências (APA)"
+      ],
+      "requisitos_especificos": [
+        "Obra preferencialmente publicada nos últimos 2 anos",
+        "Análise crítica fundamentada",
+        "Mínimo de 5 referências bibliográficas"
+      ],
+      "referencias_minimas": 5,
+      "template": "templates/Tempo_Social_Resenha.docx"
+    },
+    {
+      "tipo": "Entrevista",
+      "extensao": "Recomendado até 12.000 caracteres (cerca de 2.200 palavras)",
+      "detalhes": "Entrevista com personalidade relevante para as ciências sociais, com introdução contextualizadora e perguntas substantivas.",
+      "titulacao_minima_autor": "Mestre (mínimo)",
+      "idiomas_aceitos": ["Português", "Inglês", "Espanhol", "Francês"],
+      "resumo_maximo_caracteres": null,
+      "resumo_obrigatorio": false,
+      "palavras_chave_quantidade": null,
+      "estrutura_sugerida": [
+        "Título (português e inglês)",
+        "Apresentação do entrevistado e contexto",
+        "Perguntas e respostas",
+        "Considerações finais (opcional)",
+        "Referências (se houver)"
+      ],
+      "requisitos_especificos": [
+        "Autorização do entrevistado para publicação",
+        "Relevância acadêmica do tema",
+        "Mínimo de 5 referências (quando aplicável)"
+      ],
+      "referencias_minimas": 5,
+      "template": "templates/Tempo_Social_Entrevista.docx"
+    }
+  ],
+  "checklist": [
+    "Submissão realizada exclusivamente pela plataforma online da revista (https://revistas.usp.br/ts/about/submissions).",
+    "Arquivo principal em formato Microsoft Word, OpenOffice ou RTF, sem identificação de autores (para garantir duplo-cego).",
+    "Título no cabeçalho (máximo 45 toques) com versão em português e inglês (mesmo para submissões em espanhol/francês).",
+    "Resumo e abstract: obrigatórios para artigos (até 750 caracteres cada), opcionais para resenhas e entrevistas. Devem sintetizar propósitos, métodos e conclusões.",
+    "Palavras-chave: 3 a 5 (obrigatórias para artigos; opcionais para resenhas/entrevistas), com versão em inglês.",
+    "Texto em espaço simples (1,0), fonte Times New Roman 12, margens 2,5 cm, parágrafos justificados.",
+    "Notas de fim (não rodapé): numeradas sequencialmente, inseridas após as referências.",
+    "Citações e referências no formato APA (American Psychological Association), conforme exemplos fornecidos.",
+    "Referências listadas em ordem alfabética no final do documento.",
+    "Tabelas, figuras, gráficos: inseridos no texto e também enviados em arquivos separados (jpeg, tiff, xls, etc.) para edição.",
+    "ORCID obrigatório para todos os autores, informado nos metadados da submissão e em nota de rodapé no cabeçalho (com afiliação completa).",
+    "Afiliação completa de cada autor: Universidade, Faculdade, Departamento, Cidade, Estado, País.",
+    "Declaração de financiamento (agências, números de contrato, papel das fontes).",
+    "Declaração de aprovação por comitê de ética institucional (quando aplicável), anexada na submissão.",
+    "Declaração de originalidade e ineditismo (preprints são aceitos, mas o trabalho não pode estar sob avaliação em outro periódico).",
+    "Máximo de 5 autores por submissão.",
+    "Pelo menos um autor com título de doutor (para artigos) / pelo menos um autor com título de mestre (para resenhas e entrevistas).",
+    "Contagem de caracteres (com espaços) dentro do limite de 51.000 para artigos."
+  ],
+  "instrucoes_adicionais": {
+    "contribuicao_autores": "Obrigatória a especificação da contribuição de cada autor no momento da submissão. Pode ser descritiva (ex.: 'todos os autores participaram de todas as fases') ou seguir a taxonomia CRediT (recomendada). A contribuição constará no final do artigo.",
+    "disponibilidade_dados": "Recomenda-se disponibilizar dados e materiais suplementares em repositórios confiáveis, quando aplicável.",
+    "financiamento": "Informar agências de fomento e números de processo na declaração de financiamento, anexada à submissão.",
+    "preprint": "Aceito. O artigo continua sendo avaliado em regime duplo-cego; o arquivo submetido à revista deve estar anônimo. Após a publicação, recomenda-se atualizar o preprint com o DOI da versão publicada.",
+    "etica": "Pesquisas envolvendo seres humanos devem ter aprovação de comitê de ética (declaração anexada).",
+    "idiomas": "Aceita submissões em português, inglês, espanhol e francês. Os metadados (título, resumo, palavras-chave) devem sempre ter versão em português e inglês, independentemente do idioma do texto.",
+    "doi": "Todos os trabalhos aprovados receberão DOI na publicação final."
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "id": 5,
+  "nome": "Revista Brasileira de Sociologia (RBS)",
+  "imagem": "imagem/rbs.png",
+  "instituicao": "Sociedade Brasileira de Sociologia (SBS)",
+  "qualis": "A3",
+  "issn": "2318-0544",
+  "issn_print": "2317-8507",
+  "foco": "Sociologia, Teoria Sociológica, Pesquisa Social, Pensamento Social Brasileiro",
+  "descricao": "Revista oficial da Sociedade Brasileira de Sociologia. Lançada em 2013, adota desde 2024 o sistema de publicação em fluxo contínuo em volume único anual. Publica pesquisas originais e inéditas que apresentem reflexões teóricas originais e/ou resultados de pesquisa empírica sobre temas relevantes para a sociologia contemporânea. Acesso aberto, sem taxas, seguindo as diretrizes COPE, CNPq e FAPESP.",
+  "avaliacao": "Duplo-cega (com remoção de identificação de autoria e uso de 'Autor' em autorreferências)",
+  "avaliacao_preprint": "Não especificado nas instruções; presume-se duplo-cega, desde que o arquivo esteja anônimo.",
+  "taxa": "Gratuita (sem APC)",
+  "periodicidade": "Fluxo contínuo (volume único anual)",
+  "preprint": "Não mencionado explicitamente, mas a política de ineditismo aceita versões anteriores desde que não comprometam a originalidade. Recomenda-se consultar os editores.",
+  "licenca": "CC BY",
+  "data_auditoria": "2026-04-07",
+  "url_fonte_instrucoes": "https://rbs.sbsociologia.com.br/index.php/rbs/about",
+  "ultima_atualizacao_normas": null,
+  "links": {
+    "site": "https://rbs.sbsociologia.com.br",
+    "submissao": "https://rbs.sbsociologia.com.br/index.php/rbs/about/submissions",
+    "diretrizes": "https://rbs.sbsociologia.com.br/index.php/rbs/about"
+  },
+  "limites": {
+    "artigo_palavras": "5.000 a 8.000 palavras (incluindo resumos e referências)",
+    "ensaio_palavras": "Até 8.000 palavras (recomendado, na seção Futuros Passados ou Artigos)",
+    "resenha_palavras": "Não especificado oficialmente; recomenda-se até 1.800 palavras (prática comum)",
+    "dossie_artigo_palavras": "5.000 a 8.000 palavras (por artigo)",
+    "sociologies_dialogue_palavras": "Até 8.000 palavras",
+    "futuros_passados_palavras": "Até 8.000 palavras",
+    "programas_pesquisa_palavras": "Até 8.000 palavras (recomendado)",
+    "traducao_palavras": "Até 12.000 palavras (70.000 caracteres)",
+    "resumo_maximo": "250 palavras (recomenda-se 150-250)",
+    "palavras_chave_quantidade": "3 a 5",
+    "autores_maximo": 5,
+    "titulo_maximo_palavras": 20,
+    "referencias_minimas_artigo": 15,
+    "referencias_minimas_ensaio": 15,
+    "referencias_minimas_resenha": 5,
+    "outros_limites": "Notas de rodapé (não de fim) – restringir ao mínimo."
+  },
+  "formatacao": {
+    "fonte": "Times New Roman",
+    "tamanho_fonte": 12,
+    "espacamento_entrelinhas": 1.5,
+    "recuo_primeira_linha": "1,25 cm",
+    "margens": "superior e esquerda: 3 cm; inferior e direita: 2 cm",
+    "alinhamento": "justificado",
+    "citacoes_curtas": "Menos de 4 linhas: integradas ao parágrafo, entre aspas duplas, seguidas de (Autor, ano, p. x)",
+    "citacoes_longas": "Mais de 4 linhas: parágrafo destacado, fonte 11, recuo de 4 cm à esquerda, sem aspas, espaço simples",
+    "tabelas_figuras": "Numeradas, com título e fonte. Enviar em arquivo separado (imagens com 300 dpi). Indicar claramente onde inserir no texto.",
+    "citacoes_formato": "Autor-data (APA): (Sobrenome, ano) ou (Sobrenome, ano, p. x). Para autorreferências: (Autor, ano).",
+    "referencias_formato": "Estilo APA (American Psychological Association), lista alfabética ao final, com exemplos fornecidos nas diretrizes."
+  },
+  "tipos_texto": [
+    {
+      "tipo": "Artigo original",
+      "extensao": "5.000 a 8.000 palavras (incluindo resumos e referências)",
+      "detalhes": "Pesquisa original e inédita. Deve apresentar reflexões teóricas originais e/ou resultados de pesquisa empírica sobre temas relevantes para a sociologia contemporânea.",
+      "titulacao_minima_autor": "Doutor (pelo menos um autor)",
+      "idiomas_aceitos": ["Português", "Inglês", "Espanhol"],
+      "resumo_maximo_palavras": 250,
+      "palavras_chave_quantidade": "3 a 5",
+      "estrutura_sugerida": [
+        "Título (até 20 palavras, português e inglês)",
+        "Resumo e abstract (150-250 palavras)",
+        "Palavras-chave e keywords (3 a 5)",
+        "Introdução",
+        "Referencial teórico",
+        "Metodologia",
+        "Resultados",
+        "Discussão",
+        "Considerações finais",
+        "Referências (APA)",
+        "Notas de rodapé (se houver)"
+      ],
+      "requisitos_especificos": [
+        "Pesquisa original e inédita",
+        "Reflexões teóricas ou resultados empíricos",
+        "Mínimo de 15 referências",
+        "Autorreferências devem ser substituídas por (Autor, ano) no corpo e removidas da lista"
+      ],
+      "referencias_minimas": 15,
+      "template": "templates/RBS_Artigo_Cientifico.docx"
+    },
+    {
+      "tipo": "Ensaio teórico",
+      "extensao": "Até 8.000 palavras (recomendado)",
+      "detalhes": "Ênfase em elaboração conceitual, revisão crítica da literatura e proposição original. Pode ser submetido nas seções 'Artigos' ou 'Futuros Passados'.",
+      "titulacao_minima_autor": "Doutor (pelo menos um autor)",
+      "idiomas_aceitos": ["Português", "Inglês", "Espanhol"],
+      "resumo_maximo_palavras": 250,
+      "palavras_chave_quantidade": "3 a 5",
+      "estrutura_sugerida": [
+        "Título (português e inglês, até 20 palavras)",
+        "Resumo e abstract (150-250 palavras)",
+        "Palavras-chave e keywords (3 a 5)",
+        "Introdução",
+        "Desenvolvimento argumentativo",
+        "Considerações finais",
+        "Referências (APA)",
+        "Notas de rodapé"
+      ],
+      "requisitos_especificos": [
+        "Elaboração conceitual original",
+        "Revisão crítica da literatura",
+        "Mínimo de 15 referências"
+      ],
+      "referencias_minimas": 15,
+      "template": "templates/RBS_Ensaio_Teorico.docx"
+    },
+    {
+      "tipo": "Resenha",
+      "extensao": "Recomendado até 1.800 palavras (10.000 caracteres)",
+      "detalhes": "Análise crítica de obra publicada nos últimos 2 anos. Deve apresentar contribuição original do resenhista.",
+      "titulacao_minima_autor": "Mestre (mínimo)",
+      "idiomas_aceitos": ["Português", "Inglês", "Espanhol"],
+      "resumo_maximo_palavras": null,
+      "palavras_chave_quantidade": null,
+      "estrutura_sugerida": [
+        "Título da resenha (até 20 palavras)",
+        "Identificação da obra",
+        "Síntese",
+        "Análise crítica",
+        "Contribuição para a área",
+        "Referências (APA)"
+      ],
+      "requisitos_especificos": [
+        "Obra publicada preferencialmente nos últimos 2 anos",
+        "Contribuição original do resenhista",
+        "Mínimo de 5 referências"
+      ],
+      "referencias_minimas": 5,
+      "template": "templates/RBS_Resenha.docx"
+    },
+    {
+      "tipo": "Dossiê",
+      "extensao": "5.000 a 8.000 palavras por artigo",
+      "detalhes": "Submissão em fluxo contínuo para chamadas vigentes. Critérios: relevância da temática, liderança acadêmica dos proponentes, interesse para internacionalização do debate sociológico.",
+      "titulacao_minima_autor": "Doutor (organizadores e autores)",
+      "idiomas_aceitos": ["Português", "Inglês", "Espanhol"],
+      "resumo_maximo_palavras": 250,
+      "palavras_chave_quantidade": "3 a 5",
+      "estrutura_sugerida": [
+        "Título do dossiê (até 20 palavras)",
+        "Apresentação dos organizadores",
+        "Artigos individuais (estrutura de artigo)"
+      ],
+      "requisitos_especificos": [
+        "Proposta avaliada pela comissão",
+        "Organizadores com liderança acadêmica",
+        "Cada artigo deve seguir as normas de artigo original"
+      ],
+      "referencias_minimas": 15,
+      "template": "templates/RBS_Artigo_Dossie.docx"
+    },
+    {
+      "tipo": "Sociologies in Dialogue",
+      "extensao": "Até 8.000 palavras",
+      "detalhes": "Seção internacional. Textos resultantes de investigação empírica sobre temas fundamentais da sociologia ou contribuições ao debate atual sobre teoria social. Promove diálogos transnacionais.",
+      "titulacao_minima_autor": "Doutor (pelo menos um autor)",
+      "idiomas_aceitos": ["Inglês", "Português", "Espanhol"],
+      "resumo_maximo_palavras": 250,
+      "palavras_chave_quantidade": "3 a 5",
+      "estrutura_sugerida": [
+        "Título (inglês e português, até 20 palavras)",
+        "Abstract e resumo (150-250 palavras)",
+        "Keywords e palavras-chave (3 a 5)",
+        "Introdução",
+        "Desenvolvimento",
+        "Considerações finais",
+        "Referências (APA)",
+        "Notas de rodapé"
+      ],
+      "requisitos_especificos": [
+        "Investigação empírica ou contribuição teórica",
+        "Diálogo transnacional",
+        "Mínimo de 15 referências"
+      ],
+      "referencias_minimas": 15,
+      "template": "templates/RBS_Sociologies_in_Dialogue.docx"
+    },
+    {
+      "tipo": "Futuros Passados",
+      "extensao": "Até 8.000 palavras",
+      "detalhes": "Contribuições clássicas, contemporâneas e sobre temas emergentes. Artigos, ensaios, conferências, entrevistas que ensejem entendimento da história, tendências e futuros da Sociologia brasileira e mundial.",
+      "titulacao_minima_autor": "Doutor (pelo menos um autor)",
+      "idiomas_aceitos": ["Português", "Inglês", "Espanhol"],
+      "resumo_maximo_palavras": 250,
+      "palavras_chave_quantidade": "3 a 5",
+      "estrutura_sugerida": [
+        "Depende do formato (artigo, ensaio, entrevista). Para artigos, seguir estrutura padrão."
+      ],
+      "requisitos_especificos": [
+        "Contribuição para história e futuros da sociologia",
+        "Mínimo de 15 referências (para artigos/ensaios)"
+      ],
+      "referencias_minimas": 15,
+      "template": "templates/RBS_Futuros_Passados.docx"
+    },
+    {
+      "tipo": "Programas de pesquisa em sociologia",
+      "extensao": "Até 8.000 palavras (recomendado)",
+      "detalhes": "Definição das linhas gerais que delimitam a construção de objetos e o encaminhamento de problemas de pesquisa. Dimensões de análise, metodologias e linhas interpretativas que compõem o cerne de uma área da disciplina.",
+      "titulacao_minima_autor": "Doutor (pelo menos um autor)",
+      "idiomas_aceitos": ["Português", "Inglês", "Espanhol"],
+      "resumo_maximo_palavras": 250,
+      "palavras_chave_quantidade": "3 a 5",
+      "estrutura_sugerida": [
+        "Título (até 20 palavras)",
+        "Resumo (150-250 palavras)",
+        "Introdução",
+        "Linhas gerais do programa",
+        "Dimensões de análise",
+        "Metodologias",
+        "Referências (APA)"
+      ],
+      "requisitos_especificos": [
+        "Delimitação de programa de pesquisa",
+        "Mínimo de 15 referências"
+      ],
+      "referencias_minimas": 15,
+      "template": "templates/RBS_Programas_de_Pesquisa.docx"
+    },
+    {
+      "tipo": "Tradução",
+      "extensao": "Até 12.000 palavras (70.000 caracteres)",
+      "detalhes": "Tradução de artigo inédito em português. Exigida autorização do original e nota introdutória do tradutor.",
+      "titulacao_minima_autor": "Doutor (pelo menos um tradutor)",
+      "idiomas_aceitos": ["Português"],
+      "resumo_maximo_palavras": null,
+      "palavras_chave_quantidade": null,
+      "estrutura_sugerida": [
+        "Nota do tradutor",
+        "Texto traduzido",
+        "Referências do original"
+      ],
+      "requisitos_especificos": [
+        "Autorização do detentor dos direitos",
+        "Nota introdutória do tradutor"
+      ],
+      "referencias_minimas": null,
+      "template": "templates/RBS_Traducao.docx"
+    }
+  ],
+  "checklist": [
+    "✅ Submissão realizada exclusivamente pelo sistema SEER (https://rbs.sbsociologia.com.br).",
+    "✅ Cadastro completo de todos os autores, incluindo ORCID e minibiografia.",
+    "✅ Texto original e inédito (não submetido simultaneamente a outro periódico).",
+    "✅ Pelo menos um autor com título de Doutor (para seções Artigos, Dossiê, Sociologies in Dialogue, Futuros Passados, Programas de pesquisa e Tradução). Para resenhas, pelo menos Mestre.",
+    "✅ Máximo de 5 autores por manuscrito.",
+    "✅ Arquivo principal em formato .doc, .docx ou .rtf (até 2MB).",
+    "✅ Arquivo completamente anônimo: removidas todas as identificações de autores, afiliações, ORCID, agradecimentos e autorreferências na lista de referências. No corpo do texto, autorreferências substituídas por (Autor, ano).",
+    "✅ Título com até 20 palavras (português e inglês).",
+    "✅ Resumo e abstract com 150-250 palavras, descrevendo propósitos, métodos e conclusões.",
+    "✅ 3 a 5 palavras-chave e keywords (separadas por ponto e vírgula).",
+    "✅ Formatação: Times New Roman 12, espaço 1,5, recuo primeira linha 1,25 cm, margens: superior e esquerda 3 cm, inferior e direita 2 cm.",
+    "✅ Citações conforme APA: curtas (<4 linhas) com aspas; longas (≥4 linhas) em bloco recuado 4 cm, fonte 11, sem aspas.",
+    "✅ Notas de rodapé (não de fim), numeradas, restritas ao mínimo.",
+    "✅ Referências bibliográficas em estilo APA, listadas em ordem alfabética ao final.",
+    "✅ Tabelas, figuras, gráficos: numerados, com título e fonte. Enviados em arquivos separados (imagens com 300 dpi). Indicação clara de onde inserir no texto.",
+    "✅ Declaração de conflito de interesses (se houver) e financiamento (se houver).",
+    "✅ Número CAAE informado na metodologia (para pesquisas com seres humanos).",
+    "✅ Formulário de diversidade e parentalidade preenchido (link disponível no OJS).",
+    "✅ Licença CC BY automaticamente atribuída."
+  ],
+  "instrucoes_adicionais": {
+    "contribuicao_autores": "Obrigatória especificação da participação de cada autor na versão final (da pesquisa à redação). Recomenda-se o uso da taxonomia CRediT.",
+    "disponibilidade_dados": "Recomenda-se disponibilizar dados e materiais suplementares em repositórios confiáveis.",
+    "financiamento": "Declarar agências de fomento e números de processo nos agradecimentos (após aprovação, para não comprometer anonimato).",
+    "preprint": "Não explicitamente regulamentado. Sugere-se consultar a editoria antes de submeter.",
+    "dossie": "Propostas de dossiê são recebidas por meio de editais públicos. Os artigos devem obedecer aos prazos do edital.",
+    "revisao": "Em caso de aprovação com revisões, todas as alterações devem ser marcadas e justificadas em carta aos editores. O sistema de detecção de similaridade (CopySpider) é aplicado.",
+    "publicacao": "Após aprovação, os autores devem assinar termo de cessão de direitos autorais (mantendo os direitos, mas cedendo a primeira publicação)."
+  }
+}

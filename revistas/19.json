@@ -1,0 +1,122 @@
+{
+  "id": 19,
+  "slug_da_revista": "opiniao_publica",
+  "prefixo_revista": "OP",
+  "nome": "Opinião Pública",
+  "issn_impresso": "0104-6276",
+  "issn_eletronico": "1807-0191",
+  "instituicao": "CESOP / Universidade Estadual de Campinas",
+  "area_conhecimento": "Ciência Política, opinião pública, comportamento político, Estado, democracia, violência política, confiança institucional",
+  "periodicidade": "Quadrimestral (3 edições por ano)",
+  "idiomas_aceitos": ["Português", "Inglês", "Espanhol"],
+  "acesso_aberto": true,
+  "taxa_submissao": false,
+  "taxa_processamento": false,
+  "licenca": "CC BY 4.0",
+  "politica_preprint": "Aceita submissões de textos previamente depositados em repositórios de preprint, desde que declarado na carta ao editor.",
+  "qualis": "A1",
+  "url_site": "https://opiniaopublica.cesop.unicamp.br/",
+  "url_fonte_instrucoes": "https://opiniaopublica.cesop.unicamp.br/index.php/opiniao/about/submissions",
+  "ultima_atualizacao_normas": null,
+  "data_criacao": "2026-04-08",
+  "formatacao": {
+    "formato_pagina": "A4",
+    "margens": "[INFORMAÇÃO NÃO ENCONTRADA NAS NORMAS OFICIAIS – O AUTOR DEVE CONSULTAR A SECRETARIA DA REVISTA OU SEGUIR ABNT PADRÃO (3cm sup/esq, 2cm inf/dir)]",
+    "fonte": "Times New Roman",
+    "tamanho_fonte": 12,
+    "espacamento_entrelinhas": 1.5,
+    "alinhamento": "Justificado",
+    "citacoes_longas": "Citações com mais de 3 linhas: fonte tamanho 11, espaçamento simples, recuo esquerdo de 4 cm, sem aspas.",
+    "tabelas_figuras": "Devem ser inseridas no corpo do texto, numeradas sequencialmente, com título e fonte. Tamanho da fonte pode ser reduzido para 10pt, desde que legível."
+  },
+  "checklist_submissao": [
+    "A submissão não foi publicada anteriormente nem está sob avaliação por outro periódico.",
+    "O arquivo de submissão está em formato Microsoft Word (.doc, .docx) ou OpenOffice (.odt).",
+    "O texto está em conformidade com as normas ABNT (citações e referências).",
+    "O documento está completamente anonimizado (sem nomes, afiliações, agradecimentos ou referências autoidentificáveis).",
+    "Todas as fontes (tabelas, figuras, imagens) têm autorização de uso e são citadas corretamente.",
+    "Quando aplicável, o comprovante de aprovação do Comitê de Ética em Pesquisa está anexado.",
+    "A carta ao editor (separada) justifica a relevância do trabalho e declara eventuais conflitos de interesse."
+  ],
+  "limites": {
+    "artigo_palavras": "7.000 a 9.000 palavras (incluindo referências, notas e tabelas)",
+    "ensaio_palavras": "Até 6.000 palavras",
+    "resenha_palavras": "1.500 a 2.000 palavras",
+    "nota_tecnica_palavras": "Não especificado",
+    "comentario_critico_palavras": "Não especificado",
+    "resumo": "100 a 250 palavras",
+    "palavras_chave": "3 a 5",
+    "autores_maximo": "Não especificado (normalmente até 5, sem regra explícita)",
+    "referencias_minimas_artigo": null,
+    "referencias_minimas_ensaio": null,
+    "referencias_minimas_resenha": null,
+    "outros_limites": "Dossiês temáticos: até 12 artigos convidados, cada artigo respeitando o limite de 9.000 palavras."
+  },
+  "tipos_texto": [
+    {
+      "tipo": "Artigo Original",
+      "extensao": "7.000 a 9.000 palavras",
+      "detalhes": "Trabalhos inéditos de pesquisa empírica ou teórica, com contribuição significativa para a área de opinião pública e ciência política.",
+      "titulacao_minima_autor": "Não especificado",
+      "idiomas_aceitos": ["Português", "Inglês", "Espanhol"],
+      "resumo_maximo_palavras": 250,
+      "palavras_chave_quantidade": "3 a 5",
+      "estrutura_sugerida": ["Introdução", "Referencial Teórico", "Metodologia", "Resultados e Discussão", "Considerações Finais", "Referências"],
+      "requisitos_especificos": [
+        "Submeter via sistema OJS (Open Journal Systems)",
+        "Anexar declaração de originalidade e cessão de direitos",
+        "Incluir resumo bilíngue (português e inglês; para artigos em espanhol, resumo em espanhol e inglês)"
+      ],
+      "referencias_minimas": null,
+      "template": "templates/OP_artigo_original.docx"
+    },
+    {
+      "tipo": "Ensaio",
+      "extensao": "Até 6.000 palavras",
+      "detalhes": "Reflexões teóricas, revisões críticas ou propostas conceituais inovadoras, com menos ênfase em dados empíricos originais.",
+      "titulacao_minima_autor": "Não especificado",
+      "idiomas_aceitos": ["Português", "Inglês", "Espanhol"],
+      "resumo_maximo_palavras": 250,
+      "palavras_chave_quantidade": "3 a 5",
+      "estrutura_sugerida": ["Introdução", "Desenvolvimento (seções livres)", "Considerações Finais", "Referências"],
+      "requisitos_especificos": [
+        "Submeter via sistema OJS",
+        "Resumo bilíngue (português e inglês)"
+      ],
+      "referencias_minimas": null,
+      "template": "templates/OP_ensaio.docx"
+    },
+    {
+      "tipo": "Resenha",
+      "extensao": "1.500 a 2.000 palavras",
+      "detalhes": "Resenha crítica de livro publicado nos últimos 3 anos, com relevância para a área de ciência política e opinião pública.",
+      "titulacao_minima_autor": "Não especificado",
+      "idiomas_aceitos": ["Português", "Inglês", "Espanhol"],
+      "resumo_maximo_palavras": null,
+      "palavras_chave_quantidade": "Não se aplica",
+      "estrutura_sugerida": ["Identificação da obra", "Síntese do conteúdo", "Avaliação crítica", "Referências (opcional)"],
+      "requisitos_especificos": [
+        "Submeter via sistema OJS",
+        "Incluir no início: título da obra, autor(es), editora, ano, número de páginas, ISBN"
+      ],
+      "referencias_minimas": null,
+      "template": "templates/OP_resenha.docx"
+    },
+    {
+      "tipo": "Dossiê Temático",
+      "extensao": "Cada artigo individual: 7.000 a 9.000 palavras",
+      "detalhes": "Conjunto de artigos organizados por editores convidados, com tema central definido em chamada pública.",
+      "titulacao_minima_autor": "Não especificado",
+      "idiomas_aceitos": ["Português", "Inglês", "Espanhol"],
+      "resumo_maximo_palavras": 250,
+      "palavras_chave_quantidade": "3 a 5",
+      "estrutura_sugerida": ["Introdução do dossiê (pelo organizador)", "Artigos individuais seguindo estrutura de artigo original", "Referências"],
+      "requisitos_especificos": [
+        "Proposta de dossiê deve ser submetida à avaliação do conselho editorial",
+        "Cada artigo segue as mesmas normas de submissão do artigo original"
+      ],
+      "referencias_minimas": null,
+      "template": "templates/OP_dossie.docx"
+    }
+  ]
+}

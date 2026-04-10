@@ -1,0 +1,145 @@
+{
+  "id": 1,
+  "nome": "Revista Brasileira de Ciências Sociais (RBCS)",
+  "imagem": "imagem/rbcs.png",
+  "instituicao": "ANPOCS",
+  "qualis": "A1",
+  "issn": "0102-6909",
+  "foco": "Ciências Sociais (Antropologia, Ciência Política, Sociologia)",
+  "descricao": "Periódico da Associação Nacional de Pós-Graduação e Pesquisa em Ciências Sociais (ANPOCS). Publica artigos inéditos e ensaios críticos. Submissões em fluxo contínuo. Avaliação: artigos passam por duplo-cega (mínimo dois pareceristas); ensaios críticos são avaliados pela Comissão Editorial (podendo solicitar parecer ad hoc). Permite depósito em servidores de preprint específicos.",
+  "avaliacao": {
+    "artigo": "Duplo-cega (mínimo dois pareceristas). Para artigos preprint, a avaliação torna-se simples-cega (pareceristas tomam conhecimento da autoria).",
+    "ensaio": "Pela Comissão Editorial, que pode solicitar parecer específico se julgar conveniente. Resultados: aceito, aceito com modificações, recusado (sem possibilidade de ressubmissão)."
+  },
+  "avaliacao_preprint": "Permitida apenas para artigos. Obrigatória carta de apresentação com link. O processo de avaliação do artigo preprint é simples-cego. Ensaios críticos geralmente não são submetidos como preprint; se forem, seguem a mesma política de simples-cego.",
+  "taxa": "Gratuita (sem APC)",
+  "periodicidade": "Publicação contínua (submissões em fluxo contínuo)",
+  "preprint": {
+    "permitido_para": "artigos",
+    "servidores_aceitos": ["SciELO Preprints", "Advance SAGE", "OSFPreprints", "SocArxiv"],
+    "exigencia_carta": "Obrigatória, contendo nome do servidor, URL ou DOI",
+    "procedimento_apos_publicacao": "Autor deve comunicar ao servidor que o trabalho foi publicado e informar o DOI",
+    "avaliacao": "Simples-cego (pareceristas tomam conhecimento da autoria)"
+  },
+  "licenca": "CC BY 4.0",
+  "data_auditoria": "2026-03-30",
+  "url_fonte_instrucoes": "https://anpocs.org.br/normas-para-publicacao-na-revista-brasileira-de-ciencias-sociais/",
+  "ultima_atualizacao_normas": "2026-03-30",
+  "links": {
+    "site": "https://anpocs.org.br/rbcs/",
+    "submissao": "https://submission.scielo.br/index.php/rbcsoc/login",
+    "diretrizes": "https://anpocs.org.br/normas-para-publicacao-na-revista-brasileira-de-ciencias-sociais/"
+  },
+  "limites": {
+    "artigo_palavras": "7.000 a 9.000 (incluindo referências, tabelas e diagramas)",
+    "ensaio_palavras": "Até 3.000",
+    "resenha_palavras": "Não se aplica",
+    "dossie_artigo_palavras": "Não se aplica",
+    "nota_tecnica_palavras": "Não se aplica",
+    "comentario_critico_palavras": "Não se aplica",
+    "resumo_maximo": "200 palavras (para ambos os tipos)",
+    "palavras_chave_quantidade": 5,
+    "autores_maximo": null,
+    "referencias_minimas_artigo": 20,
+    "referencias_minimas_ensaio": 3,
+    "outros_limites": "Ensaio: obrigatoriamente deve analisar uma obra publicada nos últimos 24 meses e incluir pelo menos duas referências adicionais (podem ser não bibliográficas, como filmes, obras de arte)."
+  },
+  "formatacao": {
+    "fonte": "Times New Roman",
+    "tamanho_fonte": 12,
+    "espacamento_entrelinhas": 1.5,
+    "margens": "2,5 cm (superior, inferior, esquerda, direita)",
+    "alinhamento": "justificado",
+    "citacoes_longas": "Novo parágrafo, sem aspas (conforme ABNT NBR 10520). Recuo não especificado, mas recomenda-se 4 cm.",
+    "tabelas_figuras": "Numeradas sequencialmente, inseridas logo abaixo da citação no texto (norma SciELO). Título na parte superior, fonte na parte inferior (inclusive para elaboração própria). Conteúdos internos em Times New Roman 11."
+  },
+  "tipos_texto": [
+    {
+      "tipo": "Artigo científico",
+      "extensao": "7.000 a 9.000 palavras",
+      "detalhes": "Pesquisa original e inédita. Deve conter problema explícito, argumento central, contribuição substantiva, instrumentos de análise empírica e metodologia clara.",
+      "titulacao_minima_autor": "Doutor (pelo menos um autor)",
+      "idiomas_aceitos": ["Português", "Inglês", "Espanhol"],
+      "resumo_maximo_palavras": 200,
+      "estrutura_obrigatoria_resumo": "problema, argumento central, contribuição substantiva, instrumentos empíricos, metodologia",
+      "palavras_chave_quantidade": 5,
+      "estrutura_sugerida": [
+        "Título (português e inglês)",
+        "Resumo e abstract (até 200 palavras, estruturados)",
+        "Palavras-chave e keywords (5, separadas por ponto e vírgula)",
+        "Introdução",
+        "Referencial teórico",
+        "Metodologia",
+        "Resultados",
+        "Discussão",
+        "Considerações finais",
+        "Referências"
+      ],
+      "requisitos_especificos": [
+        "Problema de pesquisa explícito",
+        "Argumento central claro",
+        "Metodologia detalhada",
+        "Contribuição substantiva à área",
+        "Mínimo de 20 referências bibliográficas",
+        "Nota metodológica obrigatória após aprovação para artigos com métodos quantitativos; facultativa para qualitativos",
+        "Compartilhamento de dados obrigatório para pesquisas quantitativas (repositório como SciELO Data); fortemente recomendado para qualitativas"
+      ],
+      "referencias_minimas": 20,
+      "template": "templates/RBCS_ANPOCS_Artigo_Cientifico.docx"
+    },
+    {
+      "tipo": "Ensaio crítico",
+      "extensao": "Até 3.000 palavras",
+      "detalhes": "Geralmente encomendado pela Comissão Editorial, mas submissões espontâneas são avaliadas. Análise de obra recente (últimos 24 meses) + mínimo 2 referências adicionais (podem incluir materiais não bibliográficos, como obras de arte, filmes, etc.). Avaliado pela Comissão Editorial, que pode solicitar parecer específico.",
+      "titulacao_minima_autor": "Doutor (pelo menos um autor)",
+      "idiomas_aceitos": ["Português", "Inglês", "Espanhol"],
+      "resumo_maximo_palavras": 200,
+      "estrutura_obrigatoria_resumo": "indicação da obra analisada (título, autor, ano) e perspectiva crítica adotada",
+      "palavras_chave_quantidade": 5,
+      "estrutura_sugerida": [
+        "Título (português e inglês)",
+        "Resumo e abstract (até 200 palavras)",
+        "Palavras-chave e keywords (5)",
+        "Apresentação da obra",
+        "Contextualização (com pelo menos duas referências adicionais)",
+        "Análise crítica",
+        "Contribuições para o debate",
+        "Considerações finais",
+        "Referências"
+      ],
+      "requisitos_especificos": [
+        "Obra analisada publicada nos últimos 24 meses",
+        "Mínimo de 2 referências adicionais (podem ser não bibliográficas)",
+        "Não há possibilidade de ressubmissão se recusado",
+        "Não se aplica nota metodológica",
+        "Não se aplica compartilhamento de dados"
+      ],
+      "referencias_minimas": 3,
+      "template": "templates/RBCS_ANPOCS_Ensaio_Critico.docx"
+    }
+  ],
+  "checklist": [
+    "Texto inédito e exclusivo durante a avaliação (permite preprint e anais, com devida declaração na carta de apresentação – aplica-se a artigos; ensaios raramente são preprint)",
+    "Arquivo principal ANÔNIMO (sem identificação de autores, afiliações, ORCID ou agradecimentos) – ambos os tipos",
+    "Resumo até 200 palavras, estruturado conforme o tipo: artigo (problema, argumento, contribuição, metodologia) / ensaio (obra e perspectiva crítica)",
+    "5 palavras-chave separadas por ponto e vírgula (escolha estratégica) – ambos",
+    "Título, resumo e palavras-chave em português E inglês – ambos",
+    "ORCID obrigatório para todos os autores (inserido nos metadados da submissão) – ambos",
+    "Carta de apresentação (obrigatória para preprint – artigos – e para coautoria em ambos os tipos). Deve conter declarações de originalidade, conflito de interesses, financiamento, agradecimentos e, em coautoria, especificação CRediT.",
+    "Formatação: Times New Roman 12, espaçamento 1,5, margens 2,5 cm, citações autor-data (ABNT NBR 10520) – ambos",
+    "Referências em ordem alfabética com nomes COMPLETOS dos autores (formato adaptado da ABNT NBR 6023) – ambos",
+    "Número do protocolo de aprovação do Comitê de Ética em Pesquisa (CAAE) para pesquisas com seres humanos – ambos quando aplicável",
+    "Específico artigo: extensão entre 7.000 e 9.000 palavras; mínimo 20 referências; pelo menos um autor doutor; nota metodológica obrigatória para métodos quantitativos; compartilhamento de dados quantitativos obrigatório.",
+    "Específico ensaio: extensão ≤ 3.000 palavras; obra principal publicada nos últimos 24 meses; mínimo 2 referências adicionais; pelo menos um autor doutor; não há ressubmissão em caso de recusa."
+  ],
+  "instrucoes_adicionais": {
+    "contribuicao_autores": "Obrigatória a especificação da contribuição de cada autor segundo a taxonomia CRediT (na carta de apresentação) – para ambos os tipos em coautoria.",
+    "disponibilidade_dados": "Obrigatória para artigos com métodos quantitativos (depósito em repositório confiável, como SciELO Data). Recomendada fortemente para artigos qualitativos. Não se aplica a ensaios.",
+    "financiamento": "Informar agências de fomento e números de processo em nota de rodapé na introdução – ambos.",
+    "conflito_interesses": "Deve ser declarado em documento próprio assinado e anexado à submissão – ambos.",
+    "verificacao_similaridade": "Artigos aprovados são submetidos ao Similarity Check (Turnitin) – aplica-se a artigos. Ensaios também podem ser verificados.",
+    "inteligencia_artificial": "Não é aceito o uso de chatbots ou outras IAs na produção dos textos publicados – ambos.",
+    "preprint_servidores_aceitos": "Apenas para artigos: SciELO Preprints, Advance SAGE, OSFPreprints, SocArxiv.",
+    "documentos_suplementares_apos_aprovacao": "Carta ao editor e declaração de ineditismo. Nota metodológica obrigatória para artigos quantitativos (facultativa para qualitativos). Ensaios não exigem nota metodológica."
+  }
+}
