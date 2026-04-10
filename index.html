@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+    <meta name="description" content="SubmetNEV – NEV/USP. Diretrizes acadêmicas e normas para submissão em periódicos de Ciências Sociais com suporte de inteligência artificial.">
+    <title>NEV/USP · SubmetNEV – manual de apoio à Publicação Acadêmica</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="imagem/icone_submetnev.png">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at 10% 20%, rgba(0,51,102,0.03) 0%, rgba(255,245,235,0.4) 100%), linear-gradient(135deg, #fef9f0 0%, #f4f8ff 100%);
+            color: #0a1c2f;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, .serif-heading { font-family: 'Playfair Display', Georgia, serif; font-weight: 600; letter-spacing: -0.01em; }
+        .glass-header {
+            background: rgba(255,250,245,0.92);
+            backdrop-filter: blur(16px);
+            border-bottom: 2px solid rgba(0,51,102,0.25);
+            box-shadow: 0 8px 20px -8px rgba(0,0,0,0.08);
+        }
+        .card-academic {
+            background: #ffffff;
+            border-radius: 2rem;
+            border: 1px solid rgba(255,200,150,0.3);
+            transition: all 0.3s cubic-bezier(0.2,0,0,1);
+            box-shadow: 0 8px 20px -12px rgba(0,0,0,0.08);
+        }
+        .filter-pill {
+            background: #ffffff;
+            border: 1px solid #e2dcd0;
+            border-radius: 100px;
+            padding: 0.5rem 1.4rem;
+            font-weight: 600;
+            font-size: 0.8rem;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            color: #1e3a5f;
+        }
+        .filter-pill.active {
+            background: linear-gradient(105deg, #003366 0%, #0055a5 100%);
+            border-color: #ffb347;
+            color: white;
+            box-shadow: 0 8px 18px -8px rgba(0,85,165,0.5);
+        }
+        .filter-pill.qualis-A1 { background-color: #E3F2FD; border-color: #1976D2; color: #0B3B5F; }
+        .filter-pill.qualis-A2 { background-color: #E8F5E9; border-color: #2E7D32; color: #1E5631; }
+        .filter-pill.qualis-A3 { background-color: #FFF8E1; border-color: #F9A825; color: #AA6F20; }
+        .filter-pill.qualis-A4 { background-color: #FFEBEE; border-color: #E64A19; color: #B23C1C; }
+        .filter-pill.qualis-B1 { background-color: #F3E5F5; border-color: #8E24AA; color: #4A2E6B; }
+        .filter-pill.qualis-B2 { background-color: #FCE4EC; border-color: #D81B60; color: #9B2C3D; }
+        .filter-pill.qualis-B3 { background-color: #E0F2F1; border-color: #009688; color: #00695C; }
+        .filter-pill.qualis-B4 { background-color: #FFF3E0; border-color: #FFB300; color: #BF6F00; }
+        .filter-pill.qualis-C { background-color: #ECEFF1; border-color: #78909C; color: #546E7A; }
+        .filter-pill.qualis-nao-especificado { background-color: #F3E5F5; border-color: #9C27B0; color: #6A1B9A; }
+        .filter-pill.active { background: linear-gradient(105deg, #003366 0%, #0055a5 100%) !important; border-color: #ffb347 !important; color: white !important; }
+        
+        .search-input {
+            border: 2px solid #ffd9b5;
+            border-radius: 60px;
+            background: white;
+            padding: 0.85rem 1.25rem 0.85rem 3rem;
+            width: 100%;
+            font-size: 0.95rem;
+            outline: none;
+        }
+        .search-input:focus { border-color: #ff914d; box-shadow: 0 0 0 4px rgba(255,145,77,0.2); }
+        .btn-primary {
+            background: linear-gradient(105deg, #003366, #0a4c8a);
+            color: white;
+            font-weight: 700;
+            padding: 0.7rem 1.5rem;
+            border-radius: 60px;
+            transition: all 0.25s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,51,102,0.25);
+        }
+        .btn-outline-accent {
+            background: transparent;
+            border: 2px solid #ff914d;
+            color: #c23b0e;
+            font-weight: 700;
+            border-radius: 60px;
+            padding: 0.5rem 1.3rem;
+        }
+        .btn-clear {
+            background: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            color: #475569;
+            font-weight: 600;
+            border-radius: 60px;
+            padding: 0.5rem 1.2rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.8rem;
+        }
+        .btn-clear:hover {
+            background: #e2e8f0;
+            border-color: #94a3b8;
+        }
+        .favorite-star { cursor: pointer; transition: transform 0.2s ease; }
+        .favorite-star:hover { transform: scale(1.1); }
+        .qualis-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.25rem 1rem;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: 0.75rem;
+            background: #f3f4f6;
+            color: #1f2937;
+            border-left: 3px solid #9ca3af;
+        }
+        .qualis-A1 { background:#E3F2FD; color:#0B3B5F; border-left-color:#1976D2; }
+        .qualis-A2 { background:#E8F5E9; color:#1E5631; border-left-color:#2E7D32; }
+        .qualis-A3 { background:#FFF8E1; color:#AA6F20; border-left-color:#F9A825; }
+        .qualis-A4 { background:#FFEBEE; color:#B23C1C; border-left-color:#E64A19; }
+        .qualis-B1 { background:#F3E5F5; color:#4A2E6B; border-left-color:#8E24AA; }
+        .qualis-B2 { background:#FCE4EC; color:#9B2C3D; border-left-color:#D81B60; }
+        .qualis-B3 { background:#E0F2F1; color:#00695C; border-left-color:#009688; }
+        .qualis-B4 { background:#FFF3E0; color:#BF6F00; border-left-color:#FFB300; }
+        .qualis-C { background:#ECEFF1; color:#546E7A; border-left-color:#78909C; }
+        .qualis-nao-especificado { background:#F3E5F5; color:#6A1B9A; border-left-color:#9C27B0; }
+        #revistas-grid > div:not(.skeleton-card) {
+            background: #ffffff;
+            border-radius: 1.75rem;
+            border: 2px solid rgba(255,145,77,0.65);
+            transition: all 0.25s;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.02);
+            overflow: hidden;
+        }
+        #revistas-grid > div:not(.skeleton-card):hover {
+            border-color: transparent;
+            transform: translateY(-4px);
+            box-shadow: 0 20px 30px -12px rgba(0,51,102,0.2);
+        }
+        .skeleton-card {
+            background: linear-gradient(110deg, #eceff3 8%, #f5f8fc 18%, #eceff3 33%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite linear;
+            border-radius: 1.75rem;
+            height: 280px;
+        }
+        @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+        .detail-main-section {
+            background: #ffffff;
+            border-radius: 1.75rem;
+            padding: 1.8rem;
+            margin-bottom: 2rem;
+            border: 1px solid #ffe0bc;
+        }
+        .detail-two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+        @media (max-width: 768px) { .detail-two-columns { grid-template-columns: 1fr; gap: 1.5rem; } }
+        .animate-fade-in { animation: fadeUp 0.4s ease-out forwards; }
+        @keyframes fadeUp { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+        ::-webkit-scrollbar { width:6px; height:6px; }
+        ::-webkit-scrollbar-track { background:#f0e9df; border-radius:10px; }
+        ::-webkit-scrollbar-thumb { background:#ff914d; border-radius:10px; }
+        #toast-container { position: fixed; bottom:20px; right:20px; z-index:9999; display:flex; flex-direction:column; gap:10px; }
+        .toast { transition: opacity 0.3s ease; opacity:0; max-width:350px; }
+        .toast.show { opacity:1; }
+
+        .consent-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 20, 40, 0.95);
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 20000;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.3s ease;
+        }
+        .consent-modal.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        .consent-card {
+            background: #ffffff;
+            border-radius: 2rem;
+            max-width: 550px;
+            width: 90%;
+            padding: 2rem;
+            box-shadow: 0 30px 45px -20px rgba(0,0,0,0.5);
+            border-top: 6px solid #ff914d;
+            text-align: center;
+        }
+        .consent-card .message {
+            margin: 1.5rem 0;
+            color: #1e2a3a;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .consent-card .actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+        .consent-card .actions button {
+            background: #ff914d;
+            border: none;
+            color: white;
+            font-weight: bold;
+            padding: 0.6rem 1.5rem;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .consent-card .actions button:hover { background: #ff6a2c; }
+        .consent-card .actions a {
+            color: #ff914d;
+            text-decoration: underline;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .consent-card h3 {
+            font-size: 1.5rem;
+            color: #003366;
+            margin-bottom: 0.5rem;
+        }
+        
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 20, 40, 0.85);
+            backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 21000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.25s, visibility 0.25s;
+        }
+        .modal-overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal-content {
+            background: #ffffff;
+            border-radius: 2rem;
+            max-width: 720px;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 30px 45px -20px rgba(0,0,0,0.5);
+            transform: scale(0.96);
+            transition: transform 0.2s ease;
+            border-top: 6px solid #ff914d;
+        }
+        .modal-overlay.show .modal-content { transform: scale(1); }
+        .copyright-tooltip {
+            cursor: help;
+            border-bottom: 1px dotted #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app" class="min-h-screen flex flex-col">
+    <header class="glass-header sticky top-0 z-50 py-3 px-5">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <button onclick="window.router?.push('home')" class="flex items-center gap-3 hover:opacity-90 transition-all group">
+                <img src="imagem/logo_submetnev.png" alt="NEV/USP" class="h-16 md:h-24 w-auto object-contain drop-shadow-md">
+                <div class="hidden md:block border-l border-amber-200 pl-3 leading-tight">
+                    <p class="text-xs font-bold text-[#003366] tracking-wide serif-heading">Núcleo de Estudos da Violência</p>
+                    <p class="text-[11px] text-slate-600">Universidade de São Paulo · Apoio à Publicação Acadêmica</p>
+                </div>
+            </button>
+            <div class="flex gap-3">
+                <button id="menu-normas" onclick="window.router?.push('normas')" class="flex items-center gap-2 bg-white/90 hover:bg-amber-50 text-slate-800 px-4 py-2 rounded-full border border-amber-300 shadow-sm transition-all text-sm font-semibold">
+                    <i class="fas fa-book-open"></i> <span class="hidden sm:inline">Orientações Gerais</span>
+                </button>
+                <button onclick="window.router?.push('guias')" class="flex items-center gap-2 bg-gradient-to-r from-amber-50 to-orange-50 hover:from-amber-100 hover:to-orange-100 text-amber-900 px-4 py-2 rounded-full border border-orange-300 transition-all text-sm font-semibold">
+                    <i class="fas fa-feather-alt"></i> <span class="hidden sm:inline">Diretrizes Metodológicas</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 py-8 md:py-12">
+        <div id="main-view" class="view-section">
+            <div class="card-academic p-6 md:p-8 mb-8 bg-white/90">
+                <div class="relative flex-1 mb-6">
+                    <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-orange-400 text-sm"></i>
+                    <input type="text" id="search-input" placeholder=" Pesquise por título, instituição ou área temática…" class="search-input">
+                </div>
+                <div class="flex flex-wrap items-center gap-3">
+                    <span class="text-xs font-bold text-[#003366] uppercase tracking-wider mr-1 bg-amber-50 px-3 py-1 rounded-full"><i class="fas fa-chart-simple"></i> Qualis CAPES:</span>
+                    <div id="qualis-filters" class="flex flex-wrap gap-2"></div>
+                </div>
+                <div class="flex flex-wrap items-center gap-4 mt-5 pt-3 border-t border-amber-100">
+                    <label class="flex items-center gap-2 text-sm font-medium text-slate-700 bg-white/70 px-3 py-1.5 rounded-full">
+                        <input type="checkbox" id="filter-favoritos" class="rounded border-amber-300 text-[#ff6a2c] focus:ring-amber-400 w-4 h-4">
+                        <i class="fas fa-star text-yellow-500 text-xs"></i> <span>Apenas favoritos</span>
+                    </label>
+                    <div class="flex items-center gap-2 bg-white/70 px-3 py-1.5 rounded-full">
+                        <i class="fas fa-file-alt text-[#003366] text-xs"></i>
+                        <span class="text-xs font-bold text-[#003366]">Tipo de texto:</span>
+                        <select id="filter-tipo-texto" class="border border-amber-300 rounded-full px-3 py-1 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-amber-400 text-slate-700">
+                            <option value="todos">Todos os tipos</option>
+                        </select>
+                    </div>
+                    <button id="btn-limpar-filtros" class="btn-clear text-sm">
+                        <i class="fas fa-eraser mr-1"></i> Limpar filtros
+                    </button>
+                </div>
+            </div>
+            <div class="mb-6 flex flex-wrap justify-between items-center gap-3">
+                <div class="flex items-center gap-2 text-slate-700 text-sm font-semibold bg-white/60 px-4 py-2 rounded-full">
+                    <i class="fas fa-chart-line text-[#ff914d] text-base"></i>
+                    <span id="results-count">Carregando periódicos...</span>
+                </div>
+            </div>
+            <div id="revistas-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+                <div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div>
+            </div>
+        </div>
+
+        <div id="detail-view" class="view-section hidden animate-fade-in">
+            <div class="mb-5">
+                <button onclick="window.router?.back()" class="inline-flex items-center gap-2 text-[#ff6a2c] font-bold hover:underline transition">
+                    <i class="fas fa-chevron-left"></i> Voltar à lista
+                </button>
+            </div>
+            <div id="revista-detail-content"></div>
+        </div>
+
+        <div id="general-norms-view" class="view-section hidden animate-fade-in">
+            <div class="flex flex-wrap justify-between items-center gap-4 mb-8 border-b-2 border-orange-200 pb-5">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#003366] flex items-center gap-3 serif-heading">
+                    <i class="fas fa-scale-balanced text-amber-600 text-3xl"></i> Padrão Normativo Genérico
+                </h2>
+                <button onclick="window.router?.back()" class="btn-outline-accent text-sm font-bold">
+                    <i class="fas fa-arrow-left"></i> Voltar
+                </button>
+            </div>
+            <div id="general-norms-content" class="grid grid-cols-1 md:grid-cols-3 gap-7"></div>
+        </div>
+
+        <div id="guide-view" class="view-section hidden animate-fade-in">
+            <div class="flex flex-wrap justify-between items-center gap-4 mb-8 border-b-2 border-orange-200 pb-5">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#003366] flex items-center gap-3 serif-heading">
+                    <i class="fas fa-compass text-amber-600"></i> Diretrizes Metodológicas de Referência
+                </h2>
+                <button onclick="window.router?.back()" class="btn-outline-accent text-sm font-bold">
+                    <i class="fas fa-arrow-left"></i> Voltar
+                </button>
+            </div>
+            <div id="guide-content" class="space-y-8"></div>
+        </div>
+    </main>
+
+    <footer class="mt-auto border-t-2 border-amber-200 bg-white/80 backdrop-blur-sm py-6 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col gap-4">
+            <div class="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-xl p-3 mx-auto w-full text-center shadow-sm">
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-2 text-sm">
+                    <i class="fas fa-envelope-open-text text-[#ff6a2c] text-lg animate-pulse"></i>
+                    <span class="text-slate-700">
+                        <strong class="text-[#003366]">⚠️ Encontrou alguma informação incorreta?</strong> 
+                        Quer sugerir um periódico para integrar o SubmetNEV?
+                    </span>
+                    <a href="mailto:submetnev@gmail.com" class="inline-flex items-center gap-2 bg-[#ff6a2c] hover:bg-[#ff914d] text-white font-bold px-4 py-1.5 rounded-full transition-all shadow-md hover:shadow-lg text-sm">
+                        <i class="fas fa-paper-plane"></i> submetnev@gmail.com
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-600">
+                <div class="flex items-center gap-3">
+                    <img src="imagem/icone_submetnev.png" alt="SubmetNEV" class="h-7 w-auto opacity-80 rounded-xl">
+                    <span class="copyright-tooltip" title="Desenvolvido por EMERSON FRAGOSO DA SILVA. Direitos de propriedade ao NÚCLEO DE ESTUDOS DA VIOLÊNCIA DA UNIVERSIDADE DE SÃO PAULO - NEV/USP">
+                        © 2026 · <span class="font-bold text-[#003366]">NEV/USP</span> – Núcleo de Estudos da Violência
+                    </span>
+                </div>
+                <div class="flex gap-6">
+                    <button id="open-terms-btn" class="hover:text-[#ff6a2c] flex items-center gap-1 transition">
+                        <i class="fas fa-file-contract"></i> Termos de uso
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div id="toast-container"></div>
+
+<div id="consent-modal" class="consent-modal">
+    <div class="consent-card">
+        <h3>Aceite os Termos de Uso</h3>
+        <div class="message">
+            <i class="fas fa-info-circle text-[#003366] mr-2"></i> Ao continuar, você declara estar ciente e de acordo com os 
+            <a id="saiba-mais-consent" style="cursor:pointer; color:#ff914d; text-decoration:underline;">Termos de Uso</a> do SubmetNEV.
+        </div>
+        <div class="actions">
+            <a id="saiba-mais-consent-btn" style="cursor:pointer;">Saiba mais</a>
+            <button id="accept-terms-btn">Continuar</button>
+        </div>
+    </div>
+</div>
+
+<div id="terms-modal" class="modal-overlay">
+    <div class="modal-content p-6 md:p-8">
+        <div class="flex justify-between items-center border-b-2 border-amber-200 pb-3 mb-4">
+            <h3 class="text-xl font-bold text-[#003366]">TERMO DE CIÊNCIA E CONCORDÂNCIA DE USO – SUBMETNEV</h3>
+            <button onclick="window.closeTermsModal()" class="text-slate-400 hover:text-amber-600 text-2xl">&times;</button>
+        </div>
+        <div class="space-y-4 text-slate-600 text-sm max-h-[60vh] overflow-y-auto">
+            <p>Ao acessar e utilizar o SubmetNEV, o usuário declara ciência e concordância com as condições abaixo:</p>
+            <p><strong>1. Natureza da Ferramenta</strong><br> O SubmetNEV é uma ferramenta de apoio acadêmico vinculada ao NEV/USP, de caráter exclusivamente informativo e não vinculante. Os conteúdos, modelos e templates disponibilizados possuem finalidade orientativa, servindo como base para estruturação de textos acadêmicos, podendo conter inconsistências, lacunas ou desatualizações em relação a normas técnicas, diretrizes institucionais ou exigências de periódicos científicos.</p>
+            <p><strong>2. Uso de Inteligência Artificial</strong><br> A ferramenta utiliza sistemas automatizados e modelos de linguagem para apoio à elaboração de conteúdos. Tais recursos possuem caráter auxiliar, podendo apresentar limitações técnicas, imprecisões ou desatualizações, não substituindo a verificação em fontes oficiais nem a análise crítica do usuário.</p>
+            <p><strong>3. Proteção de Dados (LGPD)</strong><br> Em conformidade com a Lei nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais – LGPD), não há coleta de dados pessoais identificáveis. A página possui natureza estática, sem possibilidade de inserção ativa de informações pelo usuário, limitando-se a cookies e dados técnicos estritamente necessários ao funcionamento do sistema.</p>
+            <p><strong>4. Atualização das Informações</strong><br> Os conteúdos, modelos e templates são revisados periodicamente, não havendo garantia de atualização contínua ou de plena aderência às versões mais recentes de normas e diretrizes aplicáveis.</p>
+            <p><strong>5. Responsabilidade do Usuário</strong><br> O usuário reconhece ser de sua inteira responsabilidade a análise, revisão, adequação e validação final de qualquer conteúdo obtido por meio da ferramenta, especialmente quanto à conformidade com normas técnicas, exigências editoriais e fontes oficiais.</p>
+            <p><strong>6. Uso Adequado</strong><br> O uso da ferramenta deve ocorrer exclusivamente para fins acadêmicos, em observância às boas práticas e à legislação aplicável.</p>
+            <p><strong>Disposição Final</strong><br> Ao continuar a navegação e utilizar o SubmetNEV, considera-se que o usuário está ciente e de acordo com os presentes termos de uso.</p>
+        </div>
+        <div class="mt-6 flex justify-end">
+            <button onclick="window.closeTermsModal()" class="bg-[#003366] text-white px-6 py-2 rounded-xl font-semibold hover:bg-[#ff6a2c]">Fechar</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js?v=2"></script>
+
+<script>
+    const consentModal = document.getElementById('consent-modal');
+    const acceptTermsBtn = document.getElementById('accept-terms-btn');
+    const termsModal = document.getElementById('terms-modal');
+    const openTermsBtn = document.getElementById('open-terms-btn');
+    const saibaMaisConsent = document.querySelectorAll('#saiba-mais-consent, #saiba-mais-consent-btn');
+    const CONSENT_KEY = 'submetnev_terms_accepted';
+
+    function showTermsModal() {
+        if (consentModal && !consentModal.classList.contains('hidden')) {
+            consentModal.classList.add('hidden');
+            window._consentWasOpen = true;
+        }
+        termsModal.classList.add('show');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    window.closeTermsModal = function() {
+        termsModal.classList.remove('show');
+        document.body.style.overflow = '';
+        const accepted = localStorage.getItem(CONSENT_KEY);
+        if (!accepted && window._consentWasOpen) {
+            consentModal.classList.remove('hidden');
+            window._consentWasOpen = false;
+        }
+    };
+    
+    window.openTermsModal = showTermsModal;
+
+    function acceptConsent() {
+        localStorage.setItem(CONSENT_KEY, 'true');
+        consentModal.classList.add('hidden');
+        if (window.startRouterWhenReady) window.startRouterWhenReady();
+    }
+
+    function checkConsent() {
+        const accepted = localStorage.getItem(CONSENT_KEY);
+        if (!accepted) {
+            consentModal.classList.remove('hidden');
+        } else {
+            consentModal.classList.add('hidden');
+            if (window.startRouterWhenReady) window.startRouterWhenReady();
+        }
+    }
+
+    acceptTermsBtn.addEventListener('click', acceptConsent);
+    if (openTermsBtn) openTermsBtn.addEventListener('click', showTermsModal);
+    saibaMaisConsent.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            showTermsModal();
+        });
+    });
+    termsModal.addEventListener('click', (e) => { if (e.target === termsModal) window.closeTermsModal(); });
+
+    checkConsent();
+</script>
+</body>
+</html>
